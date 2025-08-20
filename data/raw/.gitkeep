@@ -1,0 +1,10 @@
+# Raw Data Directory
+
+This directory stores raw vehicle registration data scraped from Vahan Dashboard.
+
+## Files:
+- `vehicle_registrations_YYYYMMDD.csv` - Daily scraped data files
+- Raw JSON responses from API calls
+- Backup files from data collection runs
+
+**Note:** Raw data files are ignored by git due to size constraints.

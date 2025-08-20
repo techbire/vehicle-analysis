@@ -1,0 +1,11 @@
+# Processed Data Directory
+
+This directory stores cleaned and processed vehicle registration data.
+
+## Files:
+- Aggregated monthly/quarterly summaries
+- Growth calculation results
+- Market share analysis outputs
+- Cleaned datasets ready for dashboard consumption
+
+**Note:** Processed data files are ignored by git due to size constraints.
