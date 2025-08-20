@@ -142,6 +142,10 @@ data/*.db
 temp/
 cache/
 
+# Include presentation images
+!presentation/images/*.png
+!presentation/images/*.jpg
+
 # Streamlit
 .streamlit/secrets.toml
 

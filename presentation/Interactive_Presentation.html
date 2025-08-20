@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Registration Dashboard - Presentation</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .slide {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 40px;
+            min-height: 600px;
+            page-break-after: always;
+        }
+        .slide-title {
+            color: #2E86C1;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #2E86C1;
+            padding-bottom: 15px;
+        }
+        .slide-subtitle {
+            color: #666;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .content-section {
+            margin: 25px 0;
+        }
+        .content-section h3 {
+            color: #2E86C1;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .metric-number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .metric-label {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .architecture-diagram {
+            background: #f8f9fa;
+            border: 2px solid #2E86C1;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: monospace;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .feature-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #2E86C1;
+            border-radius: 5px;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .tech-item {
+            background: #2E86C1;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: #e8f4fd;
+            border: 1px solid #2E86C1;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        @media print {
+            body { background: white; }
+            .slide { box-shadow: none; border: 1px solid #ccc; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Slide 1: Title Slide -->
+<div class="slide">
+    <div class="slide-title">Vehicle Registration Analytics Dashboard</div>
+    <div class="slide-subtitle">Interactive Business Intelligence for Automotive Industry Investment</div>
+    
+    <div style="text-align: center; margin: 50px 0;">
+        <div style="font-size: 1.3em; color: #666; line-height: 2;">
+            <strong>Backend Developer Internship Assignment</strong><br>
+            Technology Stack: Python • Streamlit • Plotly • SQLite<br>
+            Focus: Investor-Focused Analytics & Growth Insights<br>
+            Data Source: Vahan Dashboard (Sample Data)<br>
+            <strong style="color: #2E86C1;">August 2025</strong>
+        </div>
+    </div>
+
+    <div class="highlight-box">
+        <h3>🎯 Live Dashboard</h3>
+        <p style="font-size: 1.1em; text-align: center;">
+            <strong>URL:</strong> <a href="https://vehicle-analysis.streamlit.app/">vehicle-analysis.streamlit.app</a><br>
+            <strong>Repository:</strong> github.com/techbire/vehicle-analysis
+        </p>
+    </div>
+</div>
+
+<!-- Slide 2: Problem Statement -->
+<div class="slide">
+    <div class="slide-title">Problem Statement & Solution</div>
+    
+    <div class="content-section">
+        <h3>🎯 Business Challenge</h3>
+        <div class="feature-list">
+            <div class="feature-item">
+                <strong>Data Fragmentation</strong><br>
+                Vehicle registration data scattered across multiple sources
+            </div>
+            <div class="feature-item">
+                <strong>Manual Analysis</strong><br>
+                Time-consuming manual processing of YoY/QoQ growth metrics
+            </div>
+            <div class="feature-item">
+                <strong>Investor Needs</strong><br>
+                Stakeholders need real-time, interactive market insights
+            </div>
+            <div class="feature-item">
+                <strong>Accessibility</strong><br>
+                Complex data requires user-friendly visualization interface
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h3>💡 Solution Approach</h3>
+        <div class="highlight-box">
+            <ul style="font-size: 1.1em; line-height: 1.8;">
+                <li><strong>Automated Pipeline:</strong> Build data collection & processing automation</li>
+                <li><strong>Interactive Dashboard:</strong> Create web-based analytics platform</li>
+                <li><strong>Real-time Insights:</strong> Implement live growth calculations & KPIs</li>
+                <li><strong>Investor Focus:</strong> Design professional UI for stakeholder decision-making</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 3: Key Metrics & Results -->
+<div class="slide">
+    <div class="slide-title">Key Metrics & Business Results</div>
+    
+    <div class="metrics-grid">
+        <div class="metric-card">
+            <div class="metric-number">6,120</div>
+            <div class="metric-label">Total Records Analyzed</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-number">19.98M</div>
+            <div class="metric-label">Vehicle Registrations</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-number">13</div>
+            <div class="metric-label">Manufacturers Tracked</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-number">10</div>
+            <div class="metric-label">States Covered</div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h3>📊 Market Leadership Analysis</h3>
+        <div class="highlight-box">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center;">
+                <div>
+                    <strong style="color: #2E86C1;">Hero Motors</strong><br>
+                    4.1M registrations (20.9%)<br>
+                    <em>Market Leader</em>
+                </div>
+                <div>
+                    <strong style="color: #2E86C1;">Honda</strong><br>
+                    3.6M registrations (18.3%)<br>
+                    <em>Strong Second</em>
+                </div>
+                <div>
+                    <strong style="color: #2E86C1;">Bajaj</strong><br>
+                    3.0M registrations (15.4%)<br>
+                    <em>Solid Third</em>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h3>📈 Growth Analytics Results</h3>
+        <div class="feature-list">
+            <div class="feature-item">
+                <strong>YoY Growth Rates:</strong><br>
+                2W: +36.2% | 3W: +42.4% | 4W: -25.5%
+            </div>
+            <div class="feature-item">
+                <strong>QoQ Performance:</strong><br>
+                2W: -8.3% | 3W: +0.1% | 4W: -22.4%
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 4: Technical Architecture -->
+<div class="slide">
+    <div class="slide-title">System Architecture & Technology Stack</div>
+    
+    <div class="content-section">
+        <h3>🏗️ Data Processing Pipeline</h3>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="images/dfd.png" alt="Data Processing and Presentation Pipeline" style="max-width: 100%; height: auto; border: 2px solid #2E86C1; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+        <div class="highlight-box">
+            <p><strong>Professional Data Flow:</strong> From raw data sources through processing pipeline to interactive presentation layer with real-time analytics and visualization capabilities.</p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h3>💻 Technology Stack</h3>
+        <div class="tech-stack">
+            <div class="tech-item">Python 3.11+</div>
+            <div class="tech-item">Streamlit</div>
+            <div class="tech-item">Plotly.js</div>
+            <div class="tech-item">SQLite</div>
+            <div class="tech-item">Pandas</div>
+            <div class="tech-item">NumPy</div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h3>⚡ Performance Highlights</h3>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-number">&lt;1s</div>
+                <div class="metric-label">Dashboard Load Time</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">100%</div>
+                <div class="metric-label">Mobile Responsive</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">24/7</div>
+                <div class="metric-label">Cloud Availability</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-number">Auto</div>
+                <div class="metric-label">Data Initialization</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 5: Features & Demo -->
+<div class="slide">
+    <div class="slide-title">Dashboard Features & Capabilities</div>
+    
+    <div class="content-section">
+        <h3>🎛️ Interactive Features</h3>
+        <div class="feature-list">
+            <div class="feature-item">
+                <strong>📅 Date Range Filtering</strong><br>
+                Flexible time period selection (2022-2024)
+            </div>
+            <div class="feature-item">
+                <strong>🚗 Category Analysis</strong><br>
+                2W/3W/4W vehicle segment comparison
+            </div>
+            <div class="feature-item">
+                <strong>🏭 Manufacturer Insights</strong><br>
+                Multi-select manufacturer analysis
+            </div>
+            <div class="feature-item">
+                <strong>📊 Real-time KPIs</strong><br>
+                Live metric calculations & updates
+            </div>
+            <div class="feature-item">
+                <strong>📈 Growth Analytics</strong><br>
+                YoY/QoQ trend calculations
+            </div>
+            <div class="feature-item">
+                <strong>🗺️ Geographic Analysis</strong><br>
+                State-wise registration distribution
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h3>📊 Visualization Types</h3>
+        <div class="highlight-box">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                <div>
+                    <strong>Time Series Charts:</strong><br>
+                    • Monthly registration trends<br>
+                    • Growth rate trajectories<br>
+                    • Seasonal pattern analysis
+                </div>
+                <div>
+                    <strong>Distribution Analysis:</strong><br>
+                    • Market share pie charts<br>
+                    • Manufacturer comparisons<br>
+                    • Category performance bars
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h3>🎯 Business Value</h3>
+        <div class="metrics-grid">
+            <div class="metric-card" style="background: linear-gradient(135deg, #28a745 0%, #20c997 100%);">
+                <div class="metric-number">80%</div>
+                <div class="metric-label">Time Savings</div>
+            </div>
+            <div class="metric-card" style="background: linear-gradient(135deg, #fd7e14 0%, #e83e8c 100%);">
+                <div class="metric-number">Real-time</div>
+                <div class="metric-label">Decision Making</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Slide 6: Next Steps & Q&A -->
+<div class="slide">
+    <div class="slide-title">Next Steps & Questions</div>
+    
+    <div class="content-section">
+        <h3>🚀 Future Roadmap</h3>
+        <div class="feature-list">
+            <div class="feature-item">
+                <strong>Phase 2: Real Data Integration</strong><br>
+                Connect to live Vahan Dashboard API for real-time data
+            </div>
+            <div class="feature-item">
+                <strong>Phase 3: ML Predictions</strong><br>
+                Implement forecasting models for trend prediction
+            </div>
+            <div class="feature-item">
+                <strong>Phase 4: Advanced Analytics</strong><br>
+                Add EV analysis, price trends, and regulatory impact
+            </div>
+            <div class="feature-item">
+                <strong>Phase 5: Mobile App</strong><br>
+                Native mobile application for on-the-go access
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h3>📞 Contact & Resources</h3>
+        <div class="highlight-box">
+            <div style="text-align: center; font-size: 1.1em; line-height: 2;">
+                <strong>🌐 Live Dashboard:</strong> <a href="https://vehicle-analysis.streamlit.app/">vehicle-analysis.streamlit.app</a><br>
+                <strong>📋 Repository:</strong> github.com/techbire/vehicle-analysis<br>
+                <strong>📊 Analysis Notebook:</strong> /notebooks/vehicle_analysis.ipynb<br>
+                <strong>📖 Documentation:</strong> PROJECT_DOCUMENTATION.md
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h3>❓ Questions & Discussion</h3>
+        <div style="text-align: center; font-size: 1.3em; color: #2E86C1; margin: 40px 0;">
+            <strong>Ready for your questions about:</strong><br><br>
+            • Technical implementation details<br>
+            • Business logic and analytics approach<br>
+            • Scalability and performance optimization<br>
+            • Future enhancement possibilities
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 50px; font-size: 1.5em; color: #2E86C1;">
+        <strong>Thank You!</strong>
+    </div>
+</div>
+
+</body>
+</html>
