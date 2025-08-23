@@ -4,6 +4,11 @@ An interactive dashboard for analyzing vehicle registration data from the Vahan 
 
 🎯 **Live Demo**: [https://vehicle-analysis.streamlit.app/](https://vehicle-analysis.streamlit.app/)
 
+## 📸 Screenshots
+
+   ### Dashboard
+   ![Dashboard](presentation/images/ss.png)
+
 ## Features
 
 - **YoY & QoQ Growth Analysis**: Track year-over-year and quarter-over-quarter growth rates
