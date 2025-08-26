@@ -3,6 +3,7 @@
 An interactive dashboard for analyzing vehicle registration data from the Vahan Dashboard, designed with an investor's perspective in mind.
 
 🎯 **Live Demo**: [https://vehicle-analysis.streamlit.app/](https://vehicle-analysis.streamlit.app/)
+📹 **Live Demo Video**: [https://youtu.be/d-vqucS1on4](https://youtu.be/d-vqucS1on4)
 
 ## 📸 Screenshots
 
